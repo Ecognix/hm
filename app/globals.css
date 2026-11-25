@@ -406,3 +406,24 @@ input[type="date"] {
   padding:0 14px !important;
   box-sizing:border-box !important;
 }
+
+/* Final Header, Menu & Larger Logo Override (Black Header/Menu) */
+.brand-logo{height:66px !important;width:auto;object-fit:contain;display:block;flex:none}
+.footer .brand-logo{height:78px !important;width:auto;object-fit:contain;display:block;flex:none}
+@media(max-width:760px){.brand-logo{height:54px !important}}
+.site-header{background:rgba(10,10,10,.96) !important;color:#ffffff !important;border-bottom:1px solid #222226 !important;box-shadow:0 4px 24px rgba(0,0,0,.22) !important}
+.site-header .nav a:not(.button){color:#e4e4e7 !important}
+.site-header .nav a:not(.button):hover,.site-header .nav a[aria-current=page]{color:#ffffff !important}
+.site-header .nav-account{color:#ffffff !important;border-color:#ffffff55 !important}
+.site-header .nav-account:hover{background:#ffffff !important;color:#0a0a0a !important}
+.site-header .nav-book{background:#ffffff !important;color:#0a0a0a !important}
+.site-header .nav-book:hover{background:#e4e4e7 !important}
+.site-header .menu-toggle span{background:#ffffff !important}
+@media(max-width:1050px){
+  .site-header .nav{top:84px !important;background:#0a0a0a !important;box-shadow:0 20px 28px rgba(0,0,0,.45) !important}
+  .site-header .nav a:not(.button){border-bottom:1px solid #26262a !important;color:#e4e4e7 !important}
+  .site-header .nav a[aria-current=page]{color:#ffffff !important}
+}
+@media(max-width:760px){
+  .site-header .nav{top:70px !important}
+}
